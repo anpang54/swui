@@ -1,2 +1,2 @@
-# swui
-Square-ish web UI.
+# swᴜɪ
+TBA
