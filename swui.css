@@ -1,0 +1,71 @@
+
+
+/* default body styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body{
+    font-family: "Inter", sans-serif;
+    padding: 2em;
+    background-color: var(--swui-t2);
+    color: var(--swui-text);
+}
+
+
+/* color classes */
+
+.bg-t1{ background-color: var(--swui-t1); }
+.bg-t2{ background-color: var(--swui-t2); }
+.bg-t3{ background-color: var(--swui-t3); }
+
+.fg-t1{ background-color: var(--swui-t1); }
+.fg-t2{ background-color: var(--swui-t2); }
+.fg-t3{ background-color: var(--swui-t3); }
+
+.bd-t1{ background-color: var(--swui-t1); }
+.bd-t2{ background-color: var(--swui-t2); }
+.bd-t3{ background-color: var(--swui-t3); }
+
+
+@layer below{
+
+
+/* html elements */
+
+a{
+    color: var(--swui-link);
+    text-decoration: none;
+}
+a:hover{
+    filter: brightness(1.5);
+    text-decoration: underline;
+}
+
+h1, h2{ margin-top: 0.25em; }
+
+/* components */
+
+.sw-button{
+    color: var(--swui-text);
+    text-decoration: none;
+    background-color: var(--swui-t2);
+    padding: 0.35em 0.7em;
+    border-radius: 0.35em;
+    border: 2px solid var(--swui-t1);
+}
+.sw-button:hover{
+    filter: brightness(1.05);
+    text-decoration: none;
+}
+
+
+.sw-card{
+    padding: 1.25em 1.5em;
+    margin: 1em;
+    border-radius: 0.5em;
+    background-color: var(--swui-t3);
+    border: 2px solid var(--swui-t1);
+}
+
+
+}
+
